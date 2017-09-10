@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:id="@+id/card_in_settingscard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/sixteen_dp">
+
+        <ImageView
+            android:id="@+id/imageView_in_settingscard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:layout_weight="1"
+            android:tint="@color/colorPrimaryDark"
+            tools:layout_gravity="left|start"
+            android:src="@drawable/folder_data_settings"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_textView_in_settingscard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="50"
+                android:text="Default folder"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/sub_textView_in_settingscard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="50"
+                android:text="TextView"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
